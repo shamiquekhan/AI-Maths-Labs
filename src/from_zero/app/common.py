@@ -9,6 +9,8 @@ from pathlib import Path
 from typing import Any
 
 import streamlit as st
+from streamlit.errors import StreamlitPageNotFoundError
+from streamlit.runtime.scriptrunner import get_script_run_ctx
 
 APP_DIR = Path(__file__).resolve().parent
 SRC_DIR = APP_DIR.parents[1]
@@ -34,6 +36,19 @@ def setup_page(title: str, icon: str = "∑") -> None:
     st.markdown(_CSS, unsafe_allow_html=True)
 
 
+def _entrypoint() -> Path | None:
+    """Return the running entrypoint script path, if available."""
+
+    ctx = get_script_run_ctx(suppress_warning=True)
+    raw = getattr(ctx, "main_script_path", None) if ctx else None
+    if not raw:
+        return None
+    try:
+        return Path(raw).resolve()
+    except OSError:
+        return None
+
+
 def sidebar(title: str = "FROM ZERO") -> None:
     with st.sidebar:
         st.markdown(
@@ -41,6 +56,33 @@ def sidebar(title: str = "FROM ZERO") -> None:
             "<div class='fz-sidebar-sub'>A first-principles AI mathematics laboratory</div>",
             unsafe_allow_html=True,
         )
+        st.divider()
+
+        # Navigation links (standard Streamlit multi-page pattern).
+        #
+        # st.page_link resolves paths relative to the *entrypoint*, so the
+        # links are only valid when the app is launched from Home.py. A page
+        # opened directly (for example during a test or a single-page demo)
+        # has itself as the entrypoint and cannot resolve any page path, so
+        # the navigation is skipped there instead of raising.
+        if _entrypoint() == (APP_DIR / "Home.py").resolve():
+            try:
+                st.page_link("Home.py", label="🏠 Home")
+                st.page_link("pages/1_Logistic_Regression.py", label="1. Logistic Regression")
+                st.page_link("pages/2_Optimizers.py", label="2. Optimizers")
+                st.page_link("pages/3_Autodiff.py", label="3. Autodiff")
+                st.page_link("pages/4_Mini_GPT.py", label="4. MiniGPT")
+                st.page_link("pages/5_Diffusion.py", label="5. Diffusion")
+                st.page_link("pages/6_Experiments.py", label="6. Experiments")
+                st.page_link("pages/7_Mathematics.py", label="7. Mathematics")
+                st.page_link("pages/8_About.py", label="8. About")
+                st.page_link("pages/9_Strict_Engine.py", label="9. Strict Engine")
+            except StreamlitPageNotFoundError:
+                # Running as a single page; the built-in page list is absent.
+                pass
+        else:
+            st.caption("Open `Home.py` to use the full navigation.")
+
         st.divider()
         st.caption(
             "The strict core — tensors, autograd, layers, and optimizers — is pure "
@@ -186,9 +228,9 @@ _CSS = """
     outline: 2px solid var(--fz-accent) !important;
     outline-offset: 2px !important;
   }
-  *:active {
-    transform: scale(0.98);
-  }
+  /* NOTE: never scale elements on :active. Applying transform to every
+     element makes the transforms compound, which moves a link out from
+     under the cursor between mousedown and mouseup so the click is lost. */
   .stApp {
     background:
       radial-gradient(circle at 8% 0%, rgba(15,118,110,0.08), transparent 30rem),
@@ -201,9 +243,6 @@ _CSS = """
   .stApp *:focus-visible {
     outline: 2px solid var(--fz-accent) !important;
     outline-offset: 2px !important;
-  }
-  .stApp *:active {
-    transform: scale(0.98);
   }
   h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', serif;
