@@ -53,9 +53,10 @@ autograd    w=[-0.558502, -0.197] b=0.273794
 | Precision / recall / F1 | 1.000 / 1.000 / 1.000 |
 | Confusion matrix | `[[100, 0], [0, 100]]` |
 
-A train/validation/test split run (seed 7) reached validation loss 0.0818 from
-0.6362 and test accuracy 1.000. The data is linearly separable, so perfect
-accuracy is expected; the point is the verified gradient path, not the score.
+A train/validation/test split run (300 samples, seed 7) reached validation loss
+0.0096 from 0.4394 and test accuracy 1.000. The data is linearly separable, so
+perfect accuracy is expected; the point is the verified gradient path, not the
+score.
 
 ## 2. Strict character GPT
 

@@ -1,0 +1,4 @@
+=== numerical gradient tests ===
+................................                                         [100%]
+32 passed in 3.51s
+EXIT=0

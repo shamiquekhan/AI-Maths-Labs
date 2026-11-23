@@ -1,0 +1,88 @@
+=== strict GPT example ===
+==================================================================
+FROM ZERO - strict character GPT
+==================================================================
+
+1. Configuration
+----------------------------------------
+vocabulary  28 characters
+context     8 tokens
+heads       2 (head dimension 4)
+parameters  1,376
+
+2. Causal mask check
+----------------------------------------
+max change before the edited token: 0.00e+00
+max change at the edited token:     2.77e+00
+
+3. Training
+----------------------------------------
+step    0 loss 3.6104
+step    4 loss 3.3969
+step    8 loss 3.4254
+step   12 loss 3.2868
+step   16 loss 3.1171
+step   20 loss 3.3334
+step   24 loss 3.0805
+step   28 loss 3.0149
+step   32 loss 3.1572
+step   36 loss 3.0244
+first loss  3.6104
+final loss  2.9559
+
+4. Sampling
+----------------------------------------
+temperature 0.0: 'the lhkrhkhkhkhkhkhkhkhkhkhkhkhkhk'
+temperature 0.8: 'the dxrgkhnr. vkr kogxu  mviek emm'
+
+Strict GPT example complete.
+EXIT=0
+
+=== strict diffusion example ===
+==================================================================
+FROM ZERO - strict diffusion (MLP denoiser)
+==================================================================
+
+1. The schedule
+----------------------------------------
+steps       20
+beta[0]     0.000100
+beta[-1]    0.020000
+alpha_bar   0.999900 -> 0.816777
+posterior variance at t=1: 0.00009199
+
+2. Closed-form forward process
+----------------------------------------
+x_t         [1.090573, -0.851363]
+expected    [1.090573, -0.851363]
+
+3. Timestep embedding
+----------------------------------------
+sinusoidal  [-0.9589, 0.2837, 0.23, 0.9732, 0.0108, 0.9999, 0.0005, 1.0]
+
+4. Training the denoiser
+----------------------------------------
+step    0 loss 1.2227
+step   10 loss 0.8705
+step   20 loss 0.9968
+step   30 loss 1.0024
+step   40 loss 0.8997
+step   50 loss 0.9888
+step   60 loss 0.8582
+step   70 loss 0.7849
+step   80 loss 1.0386
+step   90 loss 0.9202
+parameters  2,384
+first loss  1.2227
+final loss  0.7092
+
+5. Reverse sampling
+----------------------------------------
+  |@   |
+  |.*:.|
+  | @%.|
+  |=@:*|
+reverse steps recorded: 21
+
+Strict diffusion example complete.
+EXIT=0

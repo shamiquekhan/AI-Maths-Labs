@@ -1,0 +1,47 @@
+=== strict numerical and model-behavior checks ===
+FROM ZERO — strict release checks
+
+== Gradient checks (central finite differences, h=1e-6) ==
+[PASS] x^2 + x
+[PASS] tanh + sigmoid
+[PASS] softplus (includes 0)
+[PASS] exp / (1 + x^2)
+[PASS] softmax weighted
+[PASS] BCE with logits at 0
+[PASS] MSE
+[PASS] broadcast add
+[PASS] matmul
+[PASS] cross-entropy
+
+== Strict logistic: analytical vs. autograd ==
+[PASS] analytical == autograd — max error 5.55e-17
+
+== Strict character GPT ==
+[PASS] causal mask: earlier logits unchanged — 0.00e+00
+[PASS] causal mask: edited position changes — 2.77e+00
+[PASS] loss decreases — 3.6104 -> 3.1171
+[PASS] generation returns text — 'the evsfkhnr. whp lr'
+
+== Strict diffusion ==
+[PASS] loss decreases — 1.1676 -> 0.9490
+[PASS] reverse chain length — 13 frames
+[PASS] sample is finite
+
+== Strict JSON checkpoint round-trip ==
+[PASS] parameters restored
+[PASS] metadata restored
+[PASS] optimizer step restored
+
+All strict numerical and model-behavior checks passed.
+EXIT=0
+
+=== strict logistic train/validation/test end-to-end ===
+train loss: 0.6060 -> 0.0326
+valid loss: 0.4394 -> 0.0096
+train accuracy: 0.811 -> 0.994
+test accuracy: 1.000
+test precision: 1.000
+test recall: 1.000
+test f1: 1.000
+confusion matrix: [[29, 0], [0, 31]]
+EXIT=0

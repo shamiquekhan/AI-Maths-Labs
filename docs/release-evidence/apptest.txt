@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.9, pytest-9.2.0, pluggy-1.7.0 -- /home/shamique/projects/AI Maths Labs/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/shamique/projects/AI Maths Labs
+configfile: pyproject.toml
+plugins: platformdirs-4.14.8, cov-7.1.0, anyio-4.16.0
+collecting ... collected 13 items
+
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[Home] PASSED [  7%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[1_Logistic_Regression] PASSED [ 15%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[2_Optimizers] PASSED [ 23%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[3_Autodiff] PASSED [ 30%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[4_Mini_GPT] PASSED [ 38%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[5_Diffusion] PASSED [ 46%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[6_Experiments] PASSED [ 53%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[7_Mathematics] PASSED [ 61%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[8_About] PASSED [ 69%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_exception[9_Strict_Engine] PASSED [ 76%]
+tests/integration/test_app_pages.py::test_strict_logistic_button_trains_and_reports_metrics PASSED [ 84%]
+tests/integration/test_app_pages.py::test_services_degrade_gracefully_without_torch PASSED [ 92%]
+tests/integration/test_app_pages.py::test_every_page_loads_without_torch PASSED [100%]
+
+============================= 13 passed in 22.58s ==============================
+EXIT=0

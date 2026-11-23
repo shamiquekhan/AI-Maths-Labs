@@ -1,0 +1,2 @@
+All checks passed!
+RUFF_CHECK_EXIT=0

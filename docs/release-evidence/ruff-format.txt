@@ -1,0 +1,2 @@
+124 files already formatted
+RUFF_FORMAT_EXIT=0
