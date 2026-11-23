@@ -1,6 +1,6 @@
 # Release Evidence — FROM ZERO v0.1.0
 
-**Verified code commit:** `c9b1eb6b5b79f3a2f09322248f4ff6d0622a994a`
+**Verified code commit:** `4985f75ade5fe131a0ed877c4c7d6c90d7bdcfec`
 **Branch:** `main`
 **Date:** 2026-11-23
 **Python:** 3.13.9 (development); 3.12.15 (cloud-profile simulation)

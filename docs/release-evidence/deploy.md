@@ -1,8 +1,8 @@
 # Deployment Record
 
 **Status:** local deployment verified; public Streamlit Community Cloud URL **pending**.
-**Verified code commit:** `c9b1eb6b5b79f3a2f09322248f4ff6d0622a994a`
-**Release tag:** `v0.1.0` (applied after the evidence commit)
+**Verified code commit:** `4985f75ade5fe131a0ed877c4c7d6c90d7bdcfec`
+**Release tag:** `v0.1.0` (applied to the evidence commit)
 **Date:** 2026-11-23
 **Platform:** Streamlit Community Cloud (configuration ready)
 **Runtime:** Python 3.13, torch-free `requirements.txt`
