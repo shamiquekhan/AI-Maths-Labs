@@ -1,0 +1,40 @@
+=== package build (sdist + wheel) ===
+date: 2026-11-23T16:04:44Z
+commit: c9b1eb6b5b79f3a2f09322248f4ff6d0622a994a
+build: 1.6.1
+
+adding 'from_zero/strict/metrics.py'
+adding 'from_zero/strict/training.py'
+adding 'from_zero/tensor/__init__.py'
+adding 'from_zero/tensor/storage.py'
+adding 'from_zero/tensor/tensor.py'
+adding 'from_zero_ai_lab-0.1.0.dist-info/licenses/LICENSE'
+adding 'from_zero_ai_lab-0.1.0.dist-info/METADATA'
+adding 'from_zero_ai_lab-0.1.0.dist-info/WHEEL'
+adding 'from_zero_ai_lab-0.1.0.dist-info/top_level.txt'
+adding 'from_zero_ai_lab-0.1.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built from_zero_ai_lab-0.1.0.tar.gz and from_zero_ai_lab-0.1.0-py3-none-any.whl
+BUILD_EXIT=0
+
+=== artifacts ===
+total 336K
+-rw-rw-r-- 1 shamique shamique 185K Nov 23 21:34 from_zero_ai_lab-0.1.0-py3-none-any.whl
+-rw-rw-r-- 1 shamique shamique 148K Nov 23 21:34 from_zero_ai_lab-0.1.0.tar.gz
+
+=== hashes ===
+474f34eac581cf849da6da1316a6bfc32fc5cab2568fa955e7126f2de76fb7c9  /tmp/opencode/dist/from_zero_ai_lab-0.1.0-py3-none-any.whl
+241910e63a3dc34f5609968dc8b2bbf69d95c7d9dccca2592b0609071a7a8f7c  /tmp/opencode/dist/from_zero_ai_lab-0.1.0.tar.gz
+
+=== wheel contents (top-level packages) ===
+files: 97
+from_zero/ 92
+from_zero/app/ 13
+from_zero/app/pages/ 9
+from_zero/strict/ 8
+has METADATA: True
+has LICENSE: True
+
+=== install wheel in clean venv and import ===
+wheel import OK: 0.1.0
+WHEEL_INSTALL_EXIT=0

@@ -20,5 +20,5 @@ tests/integration/test_app_pages.py::test_strict_logistic_button_trains_and_repo
 tests/integration/test_app_pages.py::test_services_degrade_gracefully_without_torch PASSED [ 92%]
 tests/integration/test_app_pages.py::test_every_page_loads_without_torch PASSED [100%]
 
-============================= 13 passed in 22.58s ==============================
+============================= 13 passed in 17.95s ==============================
 EXIT=0

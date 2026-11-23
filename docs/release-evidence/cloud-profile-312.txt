@@ -1,0 +1,72 @@
+=== Streamlit Cloud profile simulation (Python 3.12, requirements.txt only) ===
+date: 2026-11-23T16:03:47Z
+commit: c9b1eb6b5b79f3a2f09322248f4ff6d0622a994a
+python: Python 3.12.15
+pip: pip 26.3 from /tmp/opencode/from-zero-cloud312/lib/python3.12/site-packages/pip (python 3.12)
+
+=== pip install -r requirements.txt ===
+Using cached pyparsing-3.3.3-py3-none-any.whl (126 kB)
+Using cached python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+Using cached referencing-0.37.0-py3-none-any.whl (26 kB)
+Using cached rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Using cached tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Installing collected packages: websockets, watchdog, urllib3, tzdata, typing-extensions, rpds-py, PyYAML, python-multipart, pyparsing, pyarrow, protobuf, pillow, packaging, numpy, narwhals, MarkupSafe, kiwisolver, itsdangerous, idna, h11, fonttools, cycler, click, charset_normalizer, certifi, attrs, uvicorn, scipy, requests, referencing, python-dateutil, plotly, jinja2, contourpy, anyio, starlette, pydeck, pandas, matplotlib, jsonschema-specifications, jsonschema, altair, streamlit
+
+Successfully installed MarkupSafe-3.0.4 PyYAML-6.0.4 altair-6.3.0 anyio-4.16.0 attrs-26.1.0 certifi-2026.11.20 charset_normalizer-3.5.3 click-8.5.1 contourpy-1.4.0 cycler-0.12.1 fonttools-4.68.0 h11-0.16.0 idna-3.20 itsdangerous-2.2.0 jinja2-3.1.6 jsonschema-4.26.0 jsonschema-specifications-2025.9.1 kiwisolver-1.5.1 matplotlib-3.11.2 narwhals-2.29.0 numpy-2.5.5 packaging-26.3 pandas-3.1.1 pillow-13.0.0 plotly-7.1.0 protobuf-7.36.2 pyarrow-26.0.1 pydeck-0.9.3 pyparsing-3.3.3 python-dateutil-4.0.0 python-multipart-0.0.34 referencing-0.37.0 requests-2.34.2 rpds-py-2026.9.1 scipy-1.18.1 starlette-1.10.0 streamlit-1.67.0 typing-extensions-4.16.0 tzdata-2026.6 urllib3-2.8.0 uvicorn-0.54.0 watchdog-7.1.1 websockets-17.4
+INSTALL_EXIT=0
+
+=== pip check ===
+No broken requirements found.
+PIP_CHECK_EXIT=0
+
+=== versions ===
+numpy==2.5.5
+scipy==1.18.1
+matplotlib==3.11.2
+plotly==7.1.0
+PyYAML==6.0.4
+streamlit==1.67.0
+
+=== torch must be absent ===
+torch installed: False
+
+=== AppTest: every page, no project install ===
+2026-11-23 21:34:31.439 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:31.616 "runner.installTracer" is not a valid config option. If you previously had this config option set, it may have been removed.
+2026-11-23 21:34:31.616 "runner.fixMatplotlib" is not a valid config option. If you previously had this config option set, it may have been removed.
+2026-11-23 21:34:32.521 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:33.075 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:33.248 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:33.653 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:33.824 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:33.975 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:34.250 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:34.417 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-11-23 21:34:34.572 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+PASS Home.py
+PASS 1_Logistic_Regression.py
+PASS 2_Optimizers.py
+PASS 3_Autodiff.py
+PASS 4_Mini_GPT.py
+PASS 5_Diffusion.py
+PASS 6_Experiments.py
+PASS 7_Mathematics.py
+PASS 8_About.py
+PASS 9_Strict_Engine.py
+10 pages loaded
+APPTEST_EXIT=0
+
+=== local server smoke ===
+health: ok
+home_status: 200
+
+=== server log ===
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8603
+  Network URL: http://10.95.109.211:8603
+  External URL: http://110.224.171.124:8603
+
+  Stopping...
+SMOKE_EXIT=0

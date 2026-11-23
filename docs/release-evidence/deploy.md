@@ -1,7 +1,7 @@
 # Deployment Record
 
 **Status:** local deployment verified; public Streamlit Community Cloud URL **pending**.
-**Verified code commit:** `b97165449f49d7166bf7558f0e9235d7bbe1d3d3`
+**Verified code commit:** `c9b1eb6b5b79f3a2f09322248f4ff6d0622a994a`
 **Release tag:** `v0.1.0` (applied after the evidence commit)
 **Date:** 2026-11-23
 **Platform:** Streamlit Community Cloud (configuration ready)

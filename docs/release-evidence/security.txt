@@ -13,5 +13,5 @@ EXIT=0
 EXIT=0
 
 === secret scan ===
-Secret scan passed: no credential patterns in 192 files.
+Secret scan passed: no credential patterns in 199 files.
 EXIT=0

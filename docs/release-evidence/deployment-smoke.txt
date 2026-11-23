@@ -1,14 +1,15 @@
 === local deployment smoke test (torch-free clean environment) ===
-date: 2026-11-23T15:52:04Z
-commit: b97165449f49d7166bf7558f0e9235d7bbe1d3d3
+date: 2026-11-23T16:05:23Z
+commit: c9b1eb6b5b79f3a2f09322248f4ff6d0622a994a
 streamlit: Streamlit, version 1.67.0
 torch installed: False
+pip check: No broken requirements found.
 
 health endpoint: ok
 home HTTP status: 200
 
 === server log ===
-2026-11-23 21:22:06.996 INFO streamlit.web.server.starlette.starlette_server: Uvicorn server started on :::8602
+2026-11-23 21:35:25.744 INFO streamlit.web.server.starlette.starlette_server: Uvicorn server started on :::8602
 
   You can now view your Streamlit app in your browser.
 
