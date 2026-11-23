@@ -1,0 +1,44 @@
+experiment:
+  name: ddpm_mnist
+  seed: 42
+  notes: 'A compact DDPM trained on MNIST to predict the Gaussian noise added at a
+    random timestep. The model is intentionally small; samples demonstrate the mechanics
+    of the reverse process rather than state-of-the-art quality.
+
+    '
+data:
+  dataset: mnist
+  image_size: 28
+  max_samples: 6000
+  data_dir: data
+  download: true
+diffusion:
+  timesteps: 1000
+  schedule: linear
+  beta_start: 0.0001
+  beta_end: 0.02
+  cosine_s: 0.008
+model:
+  in_channels: 1
+  base_channels: 32
+  channel_mults:
+  - 1
+  - 2
+  num_res_blocks: 1
+  dropout: 0.0
+training:
+  batch_size: 64
+  learning_rate: 0.0002
+  weight_decay: 0.0
+  max_steps: 3000
+  eval_interval: 250
+  eval_batches: 4
+  log_interval: 50
+  grad_clip: 1.0
+  device: auto
+sampling:
+  sample_count: 16
+  sample_interval: 1000
+output:
+  directory: artifacts/experiments
+  make_plots: true

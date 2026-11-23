@@ -1,0 +1,55 @@
+{
+  "artifacts": {
+    "attention": "artifacts/experiments/example_gpt_training/plots/attention.png",
+    "best_checkpoint": "artifacts/experiments/example_gpt_training/checkpoint/best.pt",
+    "final_sample": "artifacts/experiments/example_gpt_training/samples/final_sample.txt",
+    "last_checkpoint": "artifacts/experiments/example_gpt_training/checkpoint/last.pt",
+    "loss_curve": "artifacts/experiments/example_gpt_training/plots/loss_curve.png",
+    "samples": "artifacts/experiments/example_gpt_training/samples/samples.json",
+    "tokenizer": "artifacts/experiments/example_gpt_training/tokenizer.json"
+  },
+  "command": "examples/gpt_example.py",
+  "created_at": "2026-11-22T21:20:47+00:00",
+  "cwd": "/home/shamique/projects/AI Maths Labs",
+  "dataset": {
+    "characters": 1115394,
+    "path": "/home/shamique/projects/AI Maths Labs/data/corpora/tiny_shakespeare.txt",
+    "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "tokenizer": "character",
+    "train_characters": 1003854,
+    "train_tokens": 1003854,
+    "val_characters": 111540,
+    "val_fraction": 0.1,
+    "val_tokens": 111540,
+    "val_unknown_characters": [],
+    "vocab_size": 65
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "machine": "x86_64",
+    "numpy": "2.5.5",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "python": "3.13.9",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cu132",
+    "torch_cuda": "13.2"
+  },
+  "finished_at": "2026-11-22T21:20:48+00:00",
+  "git": {
+    "branch": null,
+    "commit": null,
+    "dirty": null
+  },
+  "history_points": 7,
+  "known_limitations": [
+    "Character-level tokenization is inefficient and the corpus is small.",
+    "The model is a toy next-token predictor, not an instruction-following assistant.",
+    "Perplexity is comparable only for the same corpus and tokenizer.",
+    "Generated text is model output and may be nonsensical."
+  ],
+  "model_family": "pytorch-mini-gpt",
+  "name": "example_gpt_training",
+  "run_id": "example_gpt_training",
+  "seed": 42
+}

@@ -1,0 +1,17 @@
+experiment:
+  name: autodiff_xor
+  seed: 42
+  notes: >
+    A scalar reverse-mode autodiff engine trains a two-hidden-layer MLP on XOR.
+    Every parameter is a Value; the backward pass is a topological traversal.
+
+model:
+  hidden_sizes: [4, 4]
+  epochs: 6000
+  learning_rate: 0.2
+  target_loss: 0.02
+  record_every: 10
+
+output:
+  directory: artifacts/experiments
+  make_plots: true

@@ -1,0 +1,23 @@
+name: ui_optimizer_demo
+seed: 42
+steps: 500
+learning_rate: 0.02
+learning_rates:
+  quadratic: 0.02
+  rosenbrock: 0.001
+  logistic: 0.05
+optimizers:
+- sgd
+- momentum
+- rmsprop
+- adam
+objectives:
+- quadratic
+- rosenbrock
+- logistic
+curvature:
+- 1.0
+- 10.0
+output_dir: /home/shamique/projects/AI Maths Labs/artifacts/experiments
+make_plots: true
+notes: Interactive dashboard comparison on small teaching objectives.

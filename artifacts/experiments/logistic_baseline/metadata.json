@@ -1,0 +1,73 @@
+{
+  "artifacts": {
+    "calibration_test": "artifacts/experiments/logistic_baseline/plots/calibration_test.png",
+    "confusion_test": "artifacts/experiments/logistic_baseline/plots/confusion_matrix_test.png",
+    "confusion_train": "artifacts/experiments/logistic_baseline/plots/confusion_matrix_train.png",
+    "data": "artifacts/experiments/logistic_baseline/plots/classification_data.png",
+    "decision_test": "artifacts/experiments/logistic_baseline/plots/decision_boundary_test.png",
+    "decision_train": "artifacts/experiments/logistic_baseline/plots/decision_boundary_train.png",
+    "loss_curve": "artifacts/experiments/logistic_baseline/plots/loss_curve.png",
+    "model": "artifacts/experiments/logistic_baseline/model.npz",
+    "sigmoid": "artifacts/experiments/logistic_baseline/plots/sigmoid.png"
+  },
+  "command": "scripts/train_logistic.py --epochs 10",
+  "created_at": "2026-11-22T14:01:31+00:00",
+  "cwd": "/home/shamique/projects/AI Maths Labs",
+  "dataset": {
+    "class_balance": {
+      "negative": 400,
+      "positive": 400
+    },
+    "dataset": "linearly_separable",
+    "generator": "linearly_separable",
+    "n_samples": 800,
+    "noise": 0.22,
+    "preprocessing": {
+      "fit_on": "train",
+      "kind": "standardize",
+      "mean": [
+        -0.008675126011754268,
+        0.006497212132288995
+      ],
+      "scale": [
+        1.2249753355869641,
+        0.6431953838732822
+      ]
+    },
+    "splits": {
+      "n_test": 160,
+      "n_total": 800,
+      "n_train": 480,
+      "n_val": 160,
+      "split_seed": 43,
+      "stratified": true
+    }
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "machine": "x86_64",
+    "numpy": "2.5.3",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "python": "3.13.9",
+    "scipy": "1.18.1",
+    "torch": "2.6.0+cu124",
+    "torch_cuda": "12.4"
+  },
+  "finished_at": "2026-11-22T14:01:33+00:00",
+  "git": {
+    "branch": null,
+    "commit": null,
+    "dirty": null
+  },
+  "history_points": 10,
+  "known_limitations": [
+    "The decision boundary is linear; moons, circles, and XOR are expected to remain partially misclassified.",
+    "Metrics come from a small synthetic dataset and are not benchmark results.",
+    "Only binary classification is supported."
+  ],
+  "model_family": "numpy-logistic-regression",
+  "name": "logistic_baseline",
+  "run_id": "logistic_baseline",
+  "seed": 42
+}

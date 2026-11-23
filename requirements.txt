@@ -1,0 +1,16 @@
+# Public dashboard runtime — pinned for Streamlit Community Cloud.
+#
+# PyTorch is intentionally excluded: it is a large optional dependency and the
+# MiniGPT and Diffusion pages degrade gracefully when it is absent. Install
+# requirements-deep-learning.txt locally to run those laboratories.
+#
+# The strict tensor engine, autograd, layers, and optimizers use only the
+# Python standard library. The NumPy/Matplotlib/Plotly dependencies below are
+# used by the hybrid laboratories and presentation layer.
+
+numpy==2.5.5
+scipy==1.18.1
+matplotlib==3.11.2
+plotly==7.1.0
+PyYAML==6.0.4
+streamlit==1.67.0

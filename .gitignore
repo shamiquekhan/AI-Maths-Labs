@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Data and model artifacts
+data/mnist/
+data/MNIST/
+data/fashion_mnist/
+data/FashionMNIST/
+data/raw/
+artifacts/checkpoints/
+artifacts/cache/
+artifacts/experiments/*/checkpoint/
+artifacts/experiments/*/samples/
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.npy
+
+# Keep experiment metadata and small reports, ignore generated image dumps
+artifacts/**/*.png
+artifacts/**/*.jpg
+artifacts/**/*.jpeg
+artifacts/**/*.gif
+artifacts/experiments/*/checkpoint/*.pt
+!artifacts/experiments/*/plots/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Large downloaded corpora are kept small; do not commit new large text files
+data/corpora/*.large.txt

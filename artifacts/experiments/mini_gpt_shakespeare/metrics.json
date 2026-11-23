@@ -1,0 +1,168 @@
+{
+  "checkpoints": {
+    "best": "artifacts/experiments/mini_gpt_shakespeare/checkpoint/best.pt",
+    "last": "artifacts/experiments/mini_gpt_shakespeare/checkpoint/last.pt",
+    "tokenizer": "artifacts/experiments/mini_gpt_shakespeare/tokenizer.json"
+  },
+  "dataset": {
+    "characters": 1115394,
+    "path": "/home/shamique/projects/AI Maths Labs/data/corpora/tiny_shakespeare.txt",
+    "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "tokenizer": "character",
+    "train_characters": 1003854,
+    "train_tokens": 1003854,
+    "val_characters": 111540,
+    "val_fraction": 0.1,
+    "val_tokens": 111540,
+    "val_unknown_characters": [],
+    "vocab_size": 65
+  },
+  "final_sample": "\nWhich was that denter the reddiser.\n\nCLARE:\nThere here mock--\nSo King EDWARD IIV:\nYou are shall here of mine devy.\n\nPEY:\nThis more thy brother sand what that greame made.\n\nPHENSTINGBE:\nTheir's horhicess in make that as now\nThou day, that le",
+  "final_sample_path": "artifacts/experiments/mini_gpt_shakespeare/samples/final_sample.txt",
+  "model": {
+    "bias": false,
+    "context_length": 128,
+    "dropout": 0.1,
+    "embedding_dim": 128,
+    "non_embedding_parameters": 787584,
+    "num_heads": 4,
+    "num_layers": 4,
+    "parameters": 812288,
+    "tie_weights": true,
+    "vocab_size": 65
+  },
+  "samples": [
+    {
+      "prompt": "\n",
+      "step": 150,
+      "text": "\nI\nO: asafnte tis, te otheared tharnd he, preckn,\n\nHenthim, achis thapiwist cald s, oreanpPend mu.\nGIco y inde e\nWhat lat mangECofowhes\nbellaremean t thal hat ghe me machan tHe.\nFen d inde-f bwurore cense winch me, woass t ee?\nThitoretha'slm",
+      "val_loss": 2.548421025276184
+    },
+    {
+      "prompt": "\n",
+      "step": 300,
+      "text": "\nI\nO: asafnt atid, te othur mod thand he,\nYo ckn,\nO y thimavache welapiwist cald s, orean,\nTAnelu.\nGIco y inde eve d tlat mango winothy\nSThind mean t thal hathant me machan tHe.\nBUNTIFinde--d wurore cense wince me, wous nthee?\nTor, metha'sl ",
+      "val_loss": 2.440051865577698
+    },
+    {
+      "prompt": "\n",
+      "step": 450,
+      "text": "\nI\nO: asafnte tid, te otheared thar do keepreckn,\nO y thif o--wilis apiwisers we burorean,\nThe muplthand ainde e yod thatemang y inothy\nShothangean t thal hathapr me machan th haisthe iere--sthurore ce se winch me,\nTouss thee?\nThitoreth 's m",
+      "val_loss": 2.382844662666321
+    },
+    {
+      "prompt": "\n",
+      "step": 600,
+      "text": "\nPUO: as; nobaty mere ourur mod thand he,\nAneckn, usent meco--wis thap wisers we burorg.\n\n\nGAUCEMEEGIICE:\n\nAne eve d that mang y inothy\nSThind mean t thal hathant me machan tl haisth tiere--sthurorercesse wince me,\nTous ntheevend toreth 'sl ",
+      "val_loss": 2.30044572353363
+    },
+    {
+      "prompt": "\n",
+      "step": 750,
+      "text": "\nIFO: as fous thit the thup mo tharnd he but ckne\nO y thim o--willel piwisers we surorghe,\nThe mupet co an, de evem fold conce mof.\n\nThINGhthares ES:\nMurl hat gre me machand He.\n\n\nNGNEST:\nHisthur reicess:\nConce my, yoach thee?\nPOULIUCEN:\nRIN",
+      "val_loss": 2.2527361869812013
+    },
+    {
+      "prompt": "\n",
+      "step": 900,
+      "text": "\nPUO: as fate thit the thupomed thand he bereck.\n\n\nHent meconcend thap wist cald bukorghe,\nThe mup thand nise deve ditlle mang yofow,\nFourllld mean thear that gre me my hand He.\n\n\nNortiere, sthur beicesse wince my, wous nomee?\n\n\nCLoreth ERIU",
+      "val_loss": 2.2252941131591797
+    },
+    {
+      "prompt": "\n",
+      "step": 1050,
+      "text": "\nPuch as fite thim the thut mod thand he but con,\nOfe thim o cof helap wish cald bukorghe,\nThat up thand aind deve ditle conce yof whas\nThothates weer url hat gre me mach nof shais he ind with unore cans,\nwinch my sey sheveee? wor, met cong ",
+      "val_loss": 2.1481491565704345
+    },
+    {
+      "prompt": "\n",
+      "step": 1200,
+      "text": "\nPuct and nobaty'd the theared that dow cepreck.\n\nFLICESTUS:\nNon, thape is be we surore.\n\nPUANCET:\nGocod aind deve ditle conce your thy\nShou angean thy ris and prome mach now shais he is wild:\nWhor ice shing thou as yers thee? wor, I that la",
+      "val_loss": 2.105280876159668
+    },
+    {
+      "prompt": "\n",
+      "step": 1350,
+      "text": "\nWhit as fate thim the thus mody annd he bereck.\n\nGLIZESTUS:\nNow well, will say fearor the sthe upet,\nTit inded it ditle conces with pof thim,\nThan the re hat greame mach not shaisth\nFirt with un beicess, wilth my soness thee?\n\nLUCET:\nAnd le",
+      "val_loss": 2.057293438911438
+    },
+    {
+      "prompt": "\n",
+      "step": 1500,
+      "text": "\n\n\nONGES:\nNus thim se ond a mode this he but con,\nOf I light--with lapinist.\n\nKITING RICHENGARY:\nYou, ou nise deve ditle conces with pordshind.\n\nCADHAM:\nI hat grecet my have preaint die theis wuld hich se wilth my soness thee?\n\nFird:\nWhat le",
+      "val_loss": 2.0245207071304323
+    },
+    {
+      "prompt": "\n",
+      "step": 1650,
+      "text": "\nWhit as fate thim the theared theand he beters.\n\nRICIES:\nI and be lapinist.\n\nKING Yorgod,\nThe must I of mine devy dither mange with poun him,\nThat the reas that out machter preainth\nFir wild wulore canse wilth me argess thee?\nThis mett 'tle",
+      "val_loss": 1.99635568857193
+    },
+    {
+      "prompt": "\n",
+      "step": 1800,
+      "text": "\nWhich waRnss thim the thus modestand he but con,\nOf I with a will lapinis but I but thim,\nThe must I of nied dever fold cont, your thy\nbrothange with ur that grecet mach notHe.\n\nNurd Servent:\nWhore canse wilt with woess thee? word mett 'tle",
+      "val_loss": 1.9740497827529908
+    },
+    {
+      "prompt": "\n",
+      "step": 1950,
+      "text": "\nWhich waRnce thim the theared that do keep:\nThat use the commin well, will cale have go\nprentemed than and be ever thangeman, you.\n\nThen him ampan the reast hapt me mach not deaist die\nTo is wull hice seencice me, woers thee?\nThis me the la",
+      "val_loss": 1.9210038661956788
+    },
+    {
+      "prompt": "\n",
+      "step": 2100,
+      "text": "\nWhic a affter; 'tnow on lard distand heard:\nThat a yet me, and be lapiniseds we suke.\n\nPEENANUS:\nWhat it is a ever thy to angens;\nO, sto him, mear the reas thans me mach notHe.\n\nLAUCES:\nAwith upore canse wilth me, worss thee?\nThis mett 'tim",
+      "val_loss": 1.9242555737495421
+    },
+    {
+      "prompt": "\n",
+      "step": 2250,
+      "text": "\nI, tile for any my my thus moderan.\n\nCOMPULIET:\nPust them, and be lapinish.\n\nKING Yorgome, And whet'cous in a every thee man,\nAnd whast think mean they last hapt me mach not shand he is willl unors?\n\nHENRY VINIO:\nWhy should how thou that lo",
+      "val_loss": 1.9026282548904419
+    },
+    {
+      "prompt": "\n",
+      "step": 2400,
+      "text": "\nWhich was that panse of unced the nothe,\nYou she and the consin well forsers we speorn.\n\nPAULINA:\nGocoian, be not dield connce with poserom.\n\nCORIALANUS:\nMan grece, my have preaist do winging unors,\nWhat wilt we as yess thee sto to the 'elm",
+      "val_loss": 1.869357419013977
+    },
+    {
+      "prompt": "\n",
+      "step": 2550,
+      "text": "\nWhich was te this see to a modest;\nWould preck to he came of York lapinish.\n\nKING Yord RIV:\nNet he I will, be with thy kee now with poserom.\n\nCORIAM:\nWhe hath we me mach not dead, he is will wull hich see,\nWhe make yes now everming ont;\nAlm",
+      "val_loss": 1.8715510010719298
+    },
+    {
+      "prompt": "\n",
+      "step": 2700,
+      "text": "\nWhich was that pleses the red that do keep:\nThat use the come for lapinish.\n\nKING RICHARD III:\nMartachian, be ever fold contain in thy\nbrothange we courl hath prome my have preaint do windish\nupon it sue wilth my soness to chand to the self",
+      "val_loss": 1.8259725213050841
+    },
+    {
+      "prompt": "\n",
+      "step": 2850,
+      "text": "\nWhic that that plese one.\n\nLARY COFFORD:\nYou should I will a will lappitence we have.\n\nROMEO:\nWell I will, be evy didle, man, you. Masterhing mean the\nre hath promper: have Hereian dispreciong horse.\n\nPOMPETER:\nI seeech thee? This mett 'tim",
+      "val_loss": 1.8265576243400574
+    },
+    {
+      "prompt": "\n",
+      "step": 3000,
+      "text": "\nWhich was that denter the reddiser.\n\nCLARE:\nThere here mock--\nSo King EDWARD IIV:\nYou are shall here of mine devy.\n\nPEY:\nThis more thy brother sand what that greame made.\n\nPHENSTINGBE:\nTheir's horhicess in make that as now\nThou day, that le",
+      "val_loss": 1.8045101284980773
+    }
+  ],
+  "samples_path": "artifacts/experiments/mini_gpt_shakespeare/samples/samples.json",
+  "training": {
+    "best_val_loss": 1.8045101284980773,
+    "best_val_perplexity": 6.076993773173899,
+    "device": "cuda",
+    "elapsed_seconds": 102.4986151789999,
+    "final_train_loss": 1.7556439638137817,
+    "final_val_loss": 1.8045101284980773,
+    "final_val_perplexity": 6.076993773173899,
+    "steps": 3000,
+    "tokens_per_second": 119884.54652329379
+  }
+}

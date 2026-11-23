@@ -1,0 +1,1 @@
+A compact DDPM trained to predict Gaussian noise at random timesteps. Sample quality is limited by the small model, short training budget, and low resolution.

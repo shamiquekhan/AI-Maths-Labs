@@ -1,0 +1,1 @@
+All optimizers start from the same point and receive the same number of objective evaluations. The same base learning rate is used for a controlled comparison; it is not tuned per algorithm.

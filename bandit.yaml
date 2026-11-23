@@ -1,0 +1,18 @@
+# Bandit configuration for the FROM ZERO source tree.
+#
+# B311 (pseudo-random generators) is excluded deliberately. The project uses
+# `random.Random(seed)` for reproducible ML initialization, data shuffling, and
+# sampling. These values are not cryptographic secrets and are never used for
+# authentication, tokens, or key material.
+skips:
+  - B311
+  # Git metadata collection in core/experiment.py uses fixed argv lists with no
+  # shell, no user-controlled command, and a timeout. The findings are noise for
+  # this local-only subprocess usage.
+  - B404
+  - B603
+  - B607
+exclude_dirs:
+  - tests
+  - examples
+  - notebooks

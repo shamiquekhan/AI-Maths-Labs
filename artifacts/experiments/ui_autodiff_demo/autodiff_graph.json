@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "data": 2.0,
+      "grad": 6.0,
+      "id": 0,
+      "op": "leaf",
+      "parents": []
+    },
+    {
+      "data": -3.0,
+      "grad": -4.0,
+      "id": 1,
+      "op": "leaf",
+      "parents": []
+    },
+    {
+      "data": -6.0,
+      "grad": -2.0,
+      "id": 2,
+      "op": "*",
+      "parents": [
+        0,
+        1
+      ]
+    },
+    {
+      "data": 10.0,
+      "grad": -2.0,
+      "id": 3,
+      "op": "leaf",
+      "parents": []
+    },
+    {
+      "data": 4.0,
+      "grad": -2.0,
+      "id": 4,
+      "op": "+",
+      "parents": [
+        2,
+        3
+      ]
+    },
+    {
+      "data": -2.0,
+      "grad": 4.0,
+      "id": 5,
+      "op": "leaf",
+      "parents": []
+    },
+    {
+      "data": -8.0,
+      "grad": 1.0,
+      "id": 6,
+      "op": "*",
+      "parents": [
+        4,
+        5
+      ]
+    }
+  ],
+  "root": 6
+}

@@ -1,0 +1,5 @@
+# Optional PyTorch stack for the hybrid MiniGPT and DDPM laboratories.
+# Install after requirements.txt:
+#   pip install -r requirements.txt -r requirements-deep-learning.txt
+torch==2.15.0
+torchvision==0.29.2

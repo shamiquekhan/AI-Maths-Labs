@@ -1,0 +1,150 @@
+{
+  "config": {
+    "curvature": [
+      1.0,
+      10.0
+    ],
+    "learning_rate": 0.02,
+    "learning_rates": {
+      "logistic": 0.05,
+      "quadratic": 0.02,
+      "rosenbrock": 0.001
+    },
+    "make_plots": true,
+    "name": "optimizer_comparison",
+    "notes": "",
+    "objectives": [
+      "quadratic",
+      "rosenbrock",
+      "logistic"
+    ],
+    "optimizers": [
+      "sgd",
+      "momentum",
+      "rmsprop",
+      "adam"
+    ],
+    "output_dir": "artifacts/experiments",
+    "seed": 42,
+    "steps": 1000
+  },
+  "objectives": {
+    "logistic": {
+      "best_loss_ranking": [
+        "momentum",
+        "adam",
+        "rmsprop",
+        "sgd"
+      ],
+      "description": "Logistic regression on a standardized two-moons split. Parameters are [w\u2081, w\u2082, b]; this is a 3-D objective, so only loss curves are plotted.",
+      "optimizers": {
+        "adam": {
+          "best_loss": 0.3013943032579411,
+          "diverged": false,
+          "final_grad_norm": 9.196548910841789e-10,
+          "final_loss": 0.3013943032579411,
+          "steps_completed": 381
+        },
+        "momentum": {
+          "best_loss": 0.3013943032579411,
+          "diverged": false,
+          "final_grad_norm": 9.553470103442175e-10,
+          "final_loss": 0.30139430325794114,
+          "steps_completed": 375
+        },
+        "rmsprop": {
+          "best_loss": 0.30140035164848045,
+          "diverged": false,
+          "final_grad_norm": 0.004250630246460835,
+          "final_loss": 0.3014846462999586,
+          "steps_completed": 1000
+        },
+        "sgd": {
+          "best_loss": 0.30149291815452856,
+          "diverged": false,
+          "final_grad_norm": 0.0034093468305742007,
+          "final_loss": 0.30149291815452856,
+          "steps_completed": 1000
+        }
+      }
+    },
+    "quadratic": {
+      "best_loss_ranking": [
+        "rmsprop",
+        "momentum",
+        "sgd",
+        "adam"
+      ],
+      "description": "Axis-aligned quadratic with curvature 1 and 10; the narrow valley exposes the effect of momentum and adaptive scaling.",
+      "optimizers": {
+        "adam": {
+          "best_loss": 0.01322839541518163,
+          "diverged": false,
+          "final_grad_norm": 0.49287061428819745,
+          "final_loss": 0.01322839541518163,
+          "steps_completed": 1000
+        },
+        "momentum": {
+          "best_loss": 9.563077648285372e-20,
+          "diverged": false,
+          "final_grad_norm": 7.172783715302586e-10,
+          "final_loss": 2.2036271546217705e-19,
+          "steps_completed": 440
+        },
+        "rmsprop": {
+          "best_loss": 2.8909205597148878e-21,
+          "diverged": false,
+          "final_grad_norm": 2.3040767457943195e-10,
+          "final_loss": 2.8909205597148878e-21,
+          "steps_completed": 467
+        },
+        "sgd": {
+          "best_loss": 9.063613201454236e-17,
+          "diverged": false,
+          "final_grad_norm": 1.3463738857727623e-08,
+          "final_loss": 9.063613201454236e-17,
+          "steps_completed": 1000
+        }
+      }
+    },
+    "rosenbrock": {
+      "best_loss_ranking": [
+        "momentum",
+        "sgd",
+        "rmsprop",
+        "adam"
+      ],
+      "description": "Rosenbrock's banana-shaped valley; a non-convex objective with a global minimum at (1, 1).",
+      "optimizers": {
+        "adam": {
+          "best_loss": 4.176946677404898,
+          "diverged": false,
+          "final_grad_norm": 1.9252885269687385,
+          "final_loss": 4.176946677404898,
+          "steps_completed": 1000
+        },
+        "momentum": {
+          "best_loss": 2.5050280577863652e-05,
+          "diverged": false,
+          "final_grad_norm": 0.00449098949519424,
+          "final_loss": 2.5050280577863652e-05,
+          "steps_completed": 1000
+        },
+        "rmsprop": {
+          "best_loss": 2.37580354673834,
+          "diverged": false,
+          "final_grad_norm": 2.7853577629969575,
+          "final_loss": 2.37580354673834,
+          "steps_completed": 1000
+        },
+        "sgd": {
+          "best_loss": 0.45352902482768304,
+          "diverged": false,
+          "final_grad_norm": 1.12577154813842,
+          "final_loss": 0.45352902482768304,
+          "steps_completed": 1000
+        }
+      }
+    }
+  }
+}

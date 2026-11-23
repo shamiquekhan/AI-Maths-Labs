@@ -1,0 +1,1 @@
+A compact DDPM trained on MNIST to predict the Gaussian noise added at a random timestep. The model is intentionally small; samples demonstrate the mechanics of the reverse process rather than state-of-the-art quality.

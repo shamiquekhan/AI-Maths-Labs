@@ -1,0 +1,12 @@
+name: ui_autodiff_demo
+seed: 42
+hidden_sizes:
+- 4
+- 4
+epochs: 6000
+learning_rate: 0.2
+target_loss: 0.02
+record_every: 10
+output_dir: /home/shamique/projects/AI Maths Labs/artifacts/experiments
+make_plots: true
+notes: Interactive dashboard run of the scalar autodiff engine on XOR.

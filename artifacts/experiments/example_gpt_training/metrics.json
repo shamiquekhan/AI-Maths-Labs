@@ -1,0 +1,60 @@
+{
+  "checkpoints": {
+    "best": "artifacts/experiments/example_gpt_training/checkpoint/best.pt",
+    "last": "artifacts/experiments/example_gpt_training/checkpoint/last.pt",
+    "tokenizer": "artifacts/experiments/example_gpt_training/tokenizer.json"
+  },
+  "dataset": {
+    "characters": 1115394,
+    "path": "/home/shamique/projects/AI Maths Labs/data/corpora/tiny_shakespeare.txt",
+    "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "tokenizer": "character",
+    "train_characters": 1003854,
+    "train_tokens": 1003854,
+    "val_characters": 111540,
+    "val_fraction": 0.1,
+    "val_tokens": 111540,
+    "val_unknown_characters": [],
+    "vocab_size": 65
+  },
+  "final_sample": "ROMEO:$K&D3qDKDq&O3XDKDD$jDZ&QO&ZZKZ",
+  "final_sample_path": "artifacts/experiments/example_gpt_training/samples/final_sample.txt",
+  "model": {
+    "bias": false,
+    "context_length": 32,
+    "dropout": 0.0,
+    "embedding_dim": 32,
+    "non_embedding_parameters": 12384,
+    "num_heads": 2,
+    "num_layers": 1,
+    "parameters": 15488,
+    "tie_weights": true,
+    "vocab_size": 65
+  },
+  "samples": [
+    {
+      "prompt": "ROMEO:",
+      "step": 10,
+      "text": "ROMEO:v:stlthl sa df,a,hdtd dleht sd",
+      "val_loss": 3.9329090118408203
+    },
+    {
+      "prompt": "ROMEO:",
+      "step": 20,
+      "text": "ROMEO:$K&D3qDKDq&O3XDKDD$jDZ&QO&ZZKZ",
+      "val_loss": 3.7050975561141968
+    }
+  ],
+  "samples_path": "artifacts/experiments/example_gpt_training/samples/samples.json",
+  "training": {
+    "best_val_loss": 3.7050975561141968,
+    "best_val_perplexity": 40.654013170980434,
+    "device": "cpu",
+    "elapsed_seconds": 0.552685542992549,
+    "final_train_loss": 3.6876564025878906,
+    "final_val_loss": 3.7050975561141968,
+    "final_val_perplexity": 40.654013170980434,
+    "steps": 20,
+    "tokens_per_second": 4631.928648140001
+  }
+}

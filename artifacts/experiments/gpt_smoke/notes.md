@@ -1,0 +1,1 @@
+A small character-level decoder-only transformer trained for next-token prediction. This is a teaching model, not a general-purpose assistant.

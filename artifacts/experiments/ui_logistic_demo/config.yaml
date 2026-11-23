@@ -1,0 +1,17 @@
+name: ui_logistic_demo
+seed: 42
+dataset: linearly_separable
+n_samples: 600
+noise: 0.15
+test_fraction: 0.2
+val_fraction: 0.2
+learning_rate: 0.05
+epochs: 400
+batch_size: 64
+regularization: 0.001
+threshold: 0.5
+early_stopping_patience: 100
+min_delta: 1.0e-06
+output_dir: /home/shamique/projects/AI Maths Labs/artifacts/experiments
+make_plots: true
+notes: Interactive dashboard run. Bounded controls; not a tuned benchmark.

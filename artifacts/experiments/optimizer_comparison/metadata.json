@@ -1,0 +1,43 @@
+{
+  "artifacts": {
+    "logistic_losses": "artifacts/experiments/optimizer_comparison/plots/logistic_losses.png",
+    "quadratic_losses": "artifacts/experiments/optimizer_comparison/plots/quadratic_losses.png",
+    "quadratic_trajectories": "artifacts/experiments/optimizer_comparison/plots/quadratic_trajectories.png",
+    "rosenbrock_losses": "artifacts/experiments/optimizer_comparison/plots/rosenbrock_losses.png",
+    "rosenbrock_trajectories": "artifacts/experiments/optimizer_comparison/plots/rosenbrock_trajectories.png"
+  },
+  "command": "-",
+  "created_at": "2026-11-22T12:31:57+00:00",
+  "cwd": "/home/shamique/projects/AI Maths Labs",
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "machine": "x86_64",
+    "numpy": "2.5.3",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "python": "3.13.9",
+    "scipy": "1.18.1",
+    "torch": "2.6.0+cu124",
+    "torch_cuda": "12.4"
+  },
+  "finished_at": "2026-11-22T12:31:59+00:00",
+  "git": {
+    "branch": null,
+    "commit": null,
+    "dirty": null
+  },
+  "history_points": 9675,
+  "known_limitations": [
+    "A single learning rate is shared across algorithms, so this is a controlled comparison rather than a hyperparameter search.",
+    "The objectives are small teaching problems; rankings do not imply universal superiority.",
+    "Wall-clock time is not reported because the implementations and hardware vary."
+  ],
+  "name": "optimizer_comparison",
+  "objective_descriptions": {
+    "logistic": "Logistic regression on a standardized two-moons split. Parameters are [w\u2081, w\u2082, b]; this is a 3-D objective, so only loss curves are plotted.",
+    "quadratic": "Axis-aligned quadratic with curvature 1 and 10; the narrow valley exposes the effect of momentum and adaptive scaling.",
+    "rosenbrock": "Rosenbrock's banana-shaped valley; a non-convex objective with a global minimum at (1, 1)."
+  },
+  "run_id": "optimizer_comparison",
+  "seed": 42
+}

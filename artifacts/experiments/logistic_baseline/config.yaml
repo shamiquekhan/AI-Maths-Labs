@@ -1,0 +1,20 @@
+name: logistic_baseline
+seed: 42
+dataset: linearly_separable
+n_samples: 800
+noise: 0.22
+test_fraction: 0.2
+val_fraction: 0.2
+learning_rate: 0.08
+epochs: 10
+batch_size: 64
+regularization: 0.001
+threshold: 0.5
+early_stopping_patience: 80
+min_delta: 1.0e-06
+output_dir: artifacts/experiments
+make_plots: true
+notes: 'Linear logistic regression on a small two-dimensional dataset. Features are
+  standardized using training-split statistics only.
+
+  '

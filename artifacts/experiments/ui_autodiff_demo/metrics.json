@@ -1,0 +1,41 @@
+{
+  "accuracy": 1.0,
+  "epochs_run": 446,
+  "final_loss": 0.019924862975303343,
+  "final_predictions": [
+    {
+      "logit": -4.378539800403759,
+      "prediction": 0,
+      "target": 0,
+      "x1": 0.0,
+      "x2": 0.0
+    },
+    {
+      "logit": 3.618389797595839,
+      "prediction": 1,
+      "target": 1,
+      "x1": 0.0,
+      "x2": 1.0
+    },
+    {
+      "logit": 3.680366959054327,
+      "prediction": 1,
+      "target": 1,
+      "x1": 1.0,
+      "x2": 0.0
+    },
+    {
+      "logit": -4.165116750595036,
+      "prediction": 0,
+      "target": 0,
+      "x1": 1.0,
+      "x2": 1.0
+    }
+  ],
+  "hidden_sizes": [
+    4,
+    4
+  ],
+  "parameter_count": 37,
+  "solved": true
+}

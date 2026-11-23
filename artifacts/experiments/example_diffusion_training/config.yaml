@@ -1,0 +1,40 @@
+experiment:
+  name: example_diffusion_training
+  seed: 42
+  notes: ''
+data:
+  dataset: synthetic
+  image_size: 16
+  max_samples: 32
+  data_dir: data
+  download: true
+diffusion:
+  timesteps: 50
+  schedule: linear
+  beta_start: 0.0001
+  beta_end: 0.02
+  cosine_s: 0.008
+model:
+  in_channels: 1
+  base_channels: 16
+  channel_mults:
+  - 1
+  - 2
+  num_res_blocks: 1
+  dropout: 0.0
+training:
+  batch_size: 4
+  learning_rate: 0.001
+  weight_decay: 0.0
+  max_steps: 20
+  eval_interval: 10
+  eval_batches: 2
+  log_interval: 5
+  grad_clip: 1.0
+  device: cpu
+sampling:
+  sample_count: 4
+  sample_interval: 10
+output:
+  directory: artifacts/experiments
+  make_plots: true

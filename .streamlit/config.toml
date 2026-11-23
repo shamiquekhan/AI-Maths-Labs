@@ -1,0 +1,35 @@
+# Streamlit configuration for FROM ZERO dashboard.
+#
+# The public deployment runs the strict pure-Python engine and the NumPy
+# laboratories. PyTorch-backed pages detect its absence and show installation
+# instructions instead of failing at startup.
+
+[server]
+headless = true
+port = 8501
+enableCORS = true
+enableXsrfProtection = true
+maxUploadSize = 25
+maxMessageSize = 25
+
+[browser]
+gatherUsageStats = false
+
+[client]
+showErrorDetails = "none"
+
+[theme]
+primaryColor = "#2E86C1"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F8F9FA"
+textColor = "#1A1A2E"
+font = "sans serif"
+
+[runner]
+magicEnabled = true
+installTracer = false
+fixMatplotlib = true
+
+[logger]
+level = "info"
+messageFormat = "%(asctime)s %(levelname)s %(name)s: %(message)s"

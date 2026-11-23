@@ -1,0 +1,62 @@
+{
+  "checkpoints": {
+    "best": "artifacts/experiments/ddpm_mnist/checkpoint/best.pt",
+    "last": "artifacts/experiments/ddpm_mnist/checkpoint/last.pt"
+  },
+  "dataset": {
+    "channels": 1,
+    "dataset": "mnist",
+    "image_size": 28,
+    "labels_used": true,
+    "license_note": "MNIST is distributed by its original authors; check the current terms before redistribution.",
+    "n_train": 5400,
+    "n_val": 600,
+    "normalization": "[-1, 1]",
+    "source": "MNIST via torchvision"
+  },
+  "final_samples": "artifacts/experiments/ddpm_mnist/samples/final_samples.npz",
+  "model": {
+    "base_channels": 32,
+    "channel_mults": [
+      1,
+      2
+    ],
+    "dropout": 0.0,
+    "in_channels": 1,
+    "num_res_blocks": 1,
+    "parameters": 540961
+  },
+  "samples": [
+    {
+      "path": "artifacts/experiments/ddpm_mnist/plots/samples/step_001000.png",
+      "step": 1000,
+      "val_loss": 0.030320939142256975
+    },
+    {
+      "path": "artifacts/experiments/ddpm_mnist/plots/samples/step_002000.png",
+      "step": 2000,
+      "val_loss": 0.03044052515178919
+    },
+    {
+      "path": "artifacts/experiments/ddpm_mnist/plots/samples/step_003000.png",
+      "step": 3000,
+      "val_loss": 0.024576515424996614
+    }
+  ],
+  "schedule": {
+    "alpha_bar_first": 0.9998999834060669,
+    "alpha_bar_last": 4.035830352222547e-05,
+    "beta_first": 9.999999747378752e-05,
+    "beta_last": 0.019999999552965164,
+    "kind": "linear",
+    "timesteps": 1000
+  },
+  "training": {
+    "best_val_loss": 0.024576515424996614,
+    "device": "cuda",
+    "elapsed_seconds": 140.66181259699806,
+    "final_train_loss": 0.031060505658388138,
+    "final_val_loss": 0.024576515424996614,
+    "steps": 3000
+  }
+}

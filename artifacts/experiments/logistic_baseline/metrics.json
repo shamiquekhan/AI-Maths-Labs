@@ -1,0 +1,277 @@
+{
+  "confusion_matrix_test": "                 predicted 0   predicted 1\nactual 0 (TN/FP)          80             0\nactual 1 (FN/TP)           0            80",
+  "confusion_matrix_train": "                 predicted 0   predicted 1\nactual 0 (TN/FP)         240             0\nactual 1 (FN/TP)           0           240",
+  "dataset": {
+    "class_balance": {
+      "negative": 400,
+      "positive": 400
+    },
+    "dataset": "linearly_separable",
+    "generator": "linearly_separable",
+    "n_samples": 800,
+    "noise": 0.22,
+    "preprocessing": {
+      "fit_on": "train",
+      "kind": "standardize",
+      "mean": [
+        -0.008675126011754268,
+        0.006497212132288995
+      ],
+      "scale": [
+        1.2249753355869641,
+        0.6431953838732822
+      ]
+    },
+    "splits": {
+      "n_test": 160,
+      "n_total": 800,
+      "n_train": 480,
+      "n_val": 160,
+      "split_seed": 43,
+      "stratified": true
+    }
+  },
+  "parameters": {
+    "bias": -0.002016234946852578,
+    "weights": [
+      1.2704205096811605,
+      1.1512401126725667
+    ]
+  },
+  "test": {
+    "accuracy": 1.0,
+    "calibration": [
+      {
+        "bin_high": 0.1,
+        "bin_low": 0.0,
+        "count": 47.0,
+        "mean_confidence": 0.07033243258134965,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.2,
+        "bin_low": 0.1,
+        "count": 33.0,
+        "mean_confidence": 0.13494777834531071,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.8,
+        "bin_low": 0.7000000000000001,
+        "count": 3.0,
+        "mean_confidence": 0.7618401985503637,
+        "observed_frequency": 1.0
+      },
+      {
+        "bin_high": 0.9,
+        "bin_low": 0.8,
+        "count": 36.0,
+        "mean_confidence": 0.8705553543769775,
+        "observed_frequency": 1.0
+      },
+      {
+        "bin_high": 1.0,
+        "bin_low": 0.9,
+        "count": 41.0,
+        "mean_confidence": 0.9261364164392984,
+        "observed_frequency": 1.0
+      }
+    ],
+    "confusion_labels": [
+      [
+        "TN",
+        "FP"
+      ],
+      [
+        "FN",
+        "TP"
+      ]
+    ],
+    "confusion_matrix": [
+      [
+        80,
+        0
+      ],
+      [
+        0,
+        80
+      ]
+    ],
+    "f1": 1.0,
+    "loss": 0.10756333471217987,
+    "n": 160,
+    "positive_rate": 0.5,
+    "precision": 1.0,
+    "predicted_positive_rate": 0.5,
+    "recall": 1.0,
+    "roc_auc": 1.0,
+    "threshold": 0.5
+  },
+  "train": {
+    "accuracy": 1.0,
+    "calibration": [
+      {
+        "bin_high": 0.1,
+        "bin_low": 0.0,
+        "count": 148.0,
+        "mean_confidence": 0.0696246324701224,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.2,
+        "bin_low": 0.1,
+        "count": 86.0,
+        "mean_confidence": 0.1322951259144981,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.30000000000000004,
+        "bin_low": 0.2,
+        "count": 5.0,
+        "mean_confidence": 0.2469591385806716,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.4,
+        "bin_low": 0.30000000000000004,
+        "count": 1.0,
+        "mean_confidence": 0.32736754296197296,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.8,
+        "bin_low": 0.7000000000000001,
+        "count": 10.0,
+        "mean_confidence": 0.7591101725596289,
+        "observed_frequency": 1.0
+      },
+      {
+        "bin_high": 0.9,
+        "bin_low": 0.8,
+        "count": 75.0,
+        "mean_confidence": 0.8649866874147327,
+        "observed_frequency": 1.0
+      },
+      {
+        "bin_high": 1.0,
+        "bin_low": 0.9,
+        "count": 155.0,
+        "mean_confidence": 0.9299611932325124,
+        "observed_frequency": 1.0
+      }
+    ],
+    "confusion_labels": [
+      [
+        "TN",
+        "FP"
+      ],
+      [
+        "FN",
+        "TP"
+      ]
+    ],
+    "confusion_matrix": [
+      [
+        240,
+        0
+      ],
+      [
+        0,
+        240
+      ]
+    ],
+    "f1": 1.0,
+    "loss": 0.10357181000843235,
+    "n": 480,
+    "positive_rate": 0.5,
+    "precision": 1.0,
+    "predicted_positive_rate": 0.5,
+    "recall": 1.0,
+    "roc_auc": 1.0,
+    "threshold": 0.5
+  },
+  "training": {
+    "best_epoch": 10,
+    "early_stopped": false,
+    "epochs_requested": 10,
+    "epochs_run": 10,
+    "final_train_loss": 0.10357181000843235,
+    "final_val_loss": 0.10051575375795263
+  },
+  "val": {
+    "accuracy": 1.0,
+    "calibration": [
+      {
+        "bin_high": 0.1,
+        "bin_low": 0.0,
+        "count": 57.0,
+        "mean_confidence": 0.07091478356456807,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.2,
+        "bin_low": 0.1,
+        "count": 22.0,
+        "mean_confidence": 0.12634422080080554,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.30000000000000004,
+        "bin_low": 0.2,
+        "count": 1.0,
+        "mean_confidence": 0.20203659540332594,
+        "observed_frequency": 0.0
+      },
+      {
+        "bin_high": 0.8,
+        "bin_low": 0.7000000000000001,
+        "count": 1.0,
+        "mean_confidence": 0.767875756214477,
+        "observed_frequency": 1.0
+      },
+      {
+        "bin_high": 0.9,
+        "bin_low": 0.8,
+        "count": 34.0,
+        "mean_confidence": 0.8645796704963327,
+        "observed_frequency": 1.0
+      },
+      {
+        "bin_high": 1.0,
+        "bin_low": 0.9,
+        "count": 45.0,
+        "mean_confidence": 0.9263866232349596,
+        "observed_frequency": 1.0
+      }
+    ],
+    "confusion_labels": [
+      [
+        "TN",
+        "FP"
+      ],
+      [
+        "FN",
+        "TP"
+      ]
+    ],
+    "confusion_matrix": [
+      [
+        80,
+        0
+      ],
+      [
+        0,
+        80
+      ]
+    ],
+    "f1": 1.0,
+    "loss": 0.10051575375795263,
+    "n": 160,
+    "positive_rate": 0.5,
+    "precision": 1.0,
+    "predicted_positive_rate": 0.5,
+    "recall": 1.0,
+    "roc_auc": 1.0,
+    "threshold": 0.5
+  }
+}

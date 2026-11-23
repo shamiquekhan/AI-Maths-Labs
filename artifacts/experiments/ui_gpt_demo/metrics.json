@@ -1,0 +1,60 @@
+{
+  "checkpoints": {
+    "best": "/home/shamique/projects/AI Maths Labs/artifacts/experiments/ui_gpt_demo/checkpoint/best.pt",
+    "last": "/home/shamique/projects/AI Maths Labs/artifacts/experiments/ui_gpt_demo/checkpoint/last.pt",
+    "tokenizer": "/home/shamique/projects/AI Maths Labs/artifacts/experiments/ui_gpt_demo/tokenizer.json"
+  },
+  "dataset": {
+    "characters": 1115394,
+    "path": "/home/shamique/projects/AI Maths Labs/data/corpora/tiny_shakespeare.txt",
+    "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "tokenizer": "character",
+    "train_characters": 1003854,
+    "train_tokens": 1003854,
+    "val_characters": 111540,
+    "val_fraction": 0.1,
+    "val_tokens": 111540,
+    "val_unknown_characters": [],
+    "vocab_size": 65
+  },
+  "final_sample": "\nd\n3u :eafntbaDk'\nnT-R-\nduaomddXwaand3ek,Xp:ycsn,uuheIDImXEoacAS33\nl3pvwisCrcIwIT",
+  "final_sample_path": "artifacts/experiments/ui_gpt_demo/samples/final_sample.txt",
+  "model": {
+    "bias": false,
+    "context_length": 64,
+    "dropout": 0.0,
+    "embedding_dim": 64,
+    "non_embedding_parameters": 98624,
+    "num_heads": 4,
+    "num_layers": 2,
+    "parameters": 106880,
+    "tie_weights": true,
+    "vocab_size": 65
+  },
+  "samples": [
+    {
+      "prompt": "\n",
+      "step": 20,
+      "text": "\nd\n3u :e;fnXbzDk'\nnTmgot'uaomddXtaDnl3Ek,Xp:ycsn,uuhyIDImXEoYNAS33\nl3pfwisCbcIwIT",
+      "val_loss": 3.775427222251892
+    },
+    {
+      "prompt": "\n",
+      "step": 40,
+      "text": "\nd\n3u :eafntbaDk'\nnT-R-\nduaomddXwaand3ek,Xp:ycsn,uuheIDImXEoacAS33\nl3pvwisCrcIwIT",
+      "val_loss": 3.508023262023926
+    }
+  ],
+  "samples_path": "artifacts/experiments/ui_gpt_demo/samples/samples.json",
+  "training": {
+    "best_val_loss": 3.508023262023926,
+    "best_val_perplexity": 33.38221462918074,
+    "device": "cuda",
+    "elapsed_seconds": 0.7330310149991419,
+    "final_train_loss": 3.5186588764190674,
+    "final_val_loss": 3.508023262023926,
+    "final_val_perplexity": 33.38221462918074,
+    "steps": 40,
+    "tokens_per_second": 27938.79055720988
+  }
+}

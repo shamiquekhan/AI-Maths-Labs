@@ -1,0 +1,38 @@
+experiment:
+  name: ui_gpt_demo
+  seed: 42
+  notes: Dashboard demo run. This is a very short training budget; the output is expected
+    to be mostly noise and is not a quality claim.
+data:
+  path: data/corpora/tiny_shakespeare.txt
+  val_fraction: 0.1
+model:
+  vocab_size: 0
+  context_length: 64
+  embedding_dim: 64
+  num_heads: 4
+  num_layers: 2
+  dropout: 0.0
+  bias: false
+  tie_weights: true
+training:
+  batch_size: 8
+  learning_rate: 0.0003
+  weight_decay: 0.01
+  max_steps: 40
+  eval_interval: 20
+  eval_batches: 2
+  log_interval: 10
+  grad_clip: 1.0
+  warmup_steps: 5
+  device: auto
+sampling:
+  prompt: '
+
+    '
+  max_new_tokens: 80
+  temperature: 0.9
+  top_k: 40
+output:
+  directory: /home/shamique/projects/AI Maths Labs/artifacts/experiments
+  make_plots: true

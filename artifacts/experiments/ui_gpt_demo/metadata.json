@@ -1,0 +1,55 @@
+{
+  "artifacts": {
+    "attention": "artifacts/experiments/ui_gpt_demo/plots/attention.png",
+    "best_checkpoint": "/home/shamique/projects/AI Maths Labs/artifacts/experiments/ui_gpt_demo/checkpoint/best.pt",
+    "final_sample": "artifacts/experiments/ui_gpt_demo/samples/final_sample.txt",
+    "last_checkpoint": "/home/shamique/projects/AI Maths Labs/artifacts/experiments/ui_gpt_demo/checkpoint/last.pt",
+    "loss_curve": "artifacts/experiments/ui_gpt_demo/plots/loss_curve.png",
+    "samples": "artifacts/experiments/ui_gpt_demo/samples/samples.json",
+    "tokenizer": "/home/shamique/projects/AI Maths Labs/artifacts/experiments/ui_gpt_demo/tokenizer.json"
+  },
+  "command": "/home/shamique/projects/AI Maths Labs/src/from_zero/app/Home.py",
+  "created_at": "2026-11-22T14:25:40+00:00",
+  "cwd": "/home/shamique/projects/AI Maths Labs",
+  "dataset": {
+    "characters": 1115394,
+    "path": "/home/shamique/projects/AI Maths Labs/data/corpora/tiny_shakespeare.txt",
+    "sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+    "tokenizer": "character",
+    "train_characters": 1003854,
+    "train_tokens": 1003854,
+    "val_characters": 111540,
+    "val_fraction": 0.1,
+    "val_tokens": 111540,
+    "val_unknown_characters": [],
+    "vocab_size": 65
+  },
+  "environment": {
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "machine": "x86_64",
+    "numpy": "2.5.5",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "python": "3.13.9",
+    "scipy": "1.18.1",
+    "torch": "2.15.0+cu132",
+    "torch_cuda": "13.2"
+  },
+  "finished_at": "2026-11-22T14:25:41+00:00",
+  "git": {
+    "branch": null,
+    "commit": null,
+    "dirty": null
+  },
+  "history_points": 7,
+  "known_limitations": [
+    "Character-level tokenization is inefficient and the corpus is small.",
+    "The model is a toy next-token predictor, not an instruction-following assistant.",
+    "Perplexity is comparable only for the same corpus and tokenizer.",
+    "Generated text is model output and may be nonsensical."
+  ],
+  "model_family": "pytorch-mini-gpt",
+  "name": "ui_gpt_demo",
+  "run_id": "ui_gpt_demo",
+  "seed": 42
+}
