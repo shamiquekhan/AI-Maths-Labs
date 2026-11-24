@@ -150,7 +150,7 @@ with artifacts_tab:
     if checkpoints:
         st.markdown("#### Checkpoints")
         for checkpoint in checkpoints:
-            st.write(f"`{checkpoint.name}` · {checkpoint.stat().st_size / 1_048_576:.1f} MiB")
+            st.write(f"`{checkpoint.name}` ({checkpoint.stat().st_size / 1_048_576:.1f} MiB)")
         st.caption(
             "Checkpoints are intentionally ignored by git; retrain locally to recreate them."
         )

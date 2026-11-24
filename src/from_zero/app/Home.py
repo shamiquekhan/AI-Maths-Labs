@@ -70,7 +70,7 @@ st.markdown("## Choose a laboratory")
 columns = st.columns(2)
 labs = [
     (
-        "00 · Strict tensor engine",
+        "00. Strict tensor engine",
         "Flat-list storage, row-major strides, broadcasting, reverse-mode autograd, "
         "layers, losses, and six optimizers in plain Python. Strict logistic, character "
         "GPT, and diffusion demos run without NumPy or PyTorch.",
@@ -78,42 +78,42 @@ labs = [
         "Open strict engine",
     ),
     (
-        "01 · Logistic regression",
+        "01. Logistic regression",
         "Sigmoid, binary cross-entropy, analytical gradients, and a finite-difference check. "
         "Implemented in NumPy, including the optimizer loop.",
         "pages/1_Logistic_Regression.py",
         "Open logistic lab",
     ),
     (
-        "02 · Optimizers",
+        "02. Optimizers",
         "SGD, momentum, RMSProp, Adam, and AdamW on quadratic, Rosenbrock, and logistic "
         "objectives. Update equations are explicit and tested.",
         "pages/2_Optimizers.py",
         "Open optimizer lab",
     ),
     (
-        "03 · Autodiff",
+        "03. Autodiff",
         "A scalar reverse-mode engine: values, local backward rules, topological traversal, "
         "gradient accumulation, and a tiny MLP that learns XOR.",
         "pages/3_Autodiff.py",
         "Open autodiff lab",
     ),
     (
-        "04 · MiniGPT",
+        "04. MiniGPT",
         "A decoder-only transformer in PyTorch with explicit causal masking, shifted targets, "
         "temperature/top-k generation, and a reloadable checkpoint.",
         "pages/4_Mini_GPT.py",
         "Open transformer lab",
     ),
     (
-        "05 · Diffusion",
+        "05. Diffusion",
         "A DDPM with linear and cosine schedules, a compact U-Net noise predictor, and the "
         "full reverse chain. Trained on MNIST with a synthetic fallback.",
         "pages/5_Diffusion.py",
         "Open diffusion lab",
     ),
     (
-        "06 · Experiments",
+        "06. Experiments",
         "Inspect every saved run: configuration, metrics, history, plots, notes, and "
         "downloadable evidence.",
         "pages/6_Experiments.py",

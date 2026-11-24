@@ -131,8 +131,8 @@ streamlit run src/from_zero/app/Home.py""",
         import torch
 
         st.write(
-            f"PyTorch {torch.__version__} · CUDA available: **{torch.cuda.is_available()}**"
-            + (f" · {torch.cuda.get_device_name(0)}" if torch.cuda.is_available() else "")
+            f"PyTorch {torch.__version__}. CUDA available: **{torch.cuda.is_available()}**"
+            + (f", {torch.cuda.get_device_name(0)}" if torch.cuda.is_available() else "")
         )
     else:
         st.write(
@@ -217,6 +217,6 @@ with contributing:
         "- Nichol & Dhariwal, *Improved Denoising Diffusion Probabilistic Models* (2021)."
     )
     st.markdown("### Version")
-    st.code("from-zero-ai-lab 0.1.0 · MIT · Python >= 3.10", "text")
+    st.code("from-zero-ai-lab 0.1.0, MIT, Python >= 3.10", "text")
 
 common.footer()

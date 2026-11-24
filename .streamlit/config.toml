@@ -18,17 +18,19 @@ gatherUsageStats = false
 [client]
 showErrorDetails = "none"
 
+# Coral (light) theme: the app CSS in common.py refines this, so these values
+# must stay in step with its tokens or the first paint flashes a different
+# shade. Coral is the one accent; the paper is warm grey.
 [theme]
-primaryColor = "#2E86C1"
-backgroundColor = "#FFFFFF"
-secondaryBackgroundColor = "#F8F9FA"
-textColor = "#1A1A2E"
+base = "light"
+primaryColor = "#B23A26"
+backgroundColor = "#F4F0E8"
+secondaryBackgroundColor = "#FCFAF6"
+textColor = "#211C17"
 font = "sans serif"
 
 [runner]
 magicEnabled = true
-installTracer = false
-fixMatplotlib = true
 
 [logger]
 level = "info"

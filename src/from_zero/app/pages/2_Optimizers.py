@@ -21,7 +21,7 @@ common.hero(
     "Optimizers are update rules, not magic.",
     "The same gradients meet five different state machines. Momentum remembers direction, "
     "RMSProp rescales by recent magnitude, Adam combines both, and AdamW decouples weight decay.",
-    ("NumPy", "SGD · Momentum · RMSProp · Adam · AdamW", "Rosenbrock", "Controlled budgets"),
+    ("NumPy", "SGD, Momentum, RMSProp, Adam, AdamW", "Rosenbrock", "Controlled budgets"),
 )
 
 learn, build, visualise, evidence = st.tabs(["Learn", "Build", "Visualise", "Evidence"])
@@ -171,7 +171,7 @@ with visualise:
         rows = {}
         for objective, optimizer_runs in run.runs.items():
             for optimizer, result in optimizer_runs.items():
-                rows[f"{objective} · {optimizer}"] = {
+                rows[f"{objective}, {optimizer}"] = {
                     str(index): value
                     for index, value in enumerate(result.losses)
                     if value == value and abs(value) != float("inf")

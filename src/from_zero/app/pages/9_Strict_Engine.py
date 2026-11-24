@@ -206,7 +206,7 @@ with build:
         columns[2].metric("Final loss", f"{diffusion_result['losses'][-1]:.3f}")
         st.line_chart({"training loss": diffusion_result["losses"]})
         st.markdown("Final sample, reshaped to $4\\times4$ (brighter is larger):")
-        shades = " ·░▒▓█"
+        shades = " ░▒▓█"
         lines = []
         for row in diffusion_result["grid"]:
             lines.append("".join(shades[min(len(shades) - 1, int(value * 5))] for value in row))
