@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "A first-principles AI mathematics and generative modeling laboratory"
 readme = "README.md"
 requires-python = ">=3.10"
-license = "MIT"
+license = {text = "Creative Commons Attribution 4.0 International"}
 license-files = ["LICENSE"]
 authors = [{ name = "FROM ZERO contributors" }]
 keywords = ["education", "machine-learning", "autodiff", "transformers", "diffusion"]

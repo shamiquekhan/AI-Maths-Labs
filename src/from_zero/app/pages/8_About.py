@@ -20,7 +20,7 @@ common.hero(
     "A laboratory, not a product.",
     "FROM ZERO is a reproducible teaching repository about the mathematics that makes "
     "modern machine learning work. It is designed to be read, run, tested, and criticized.",
-    ("MIT license", "Seeded experiments", "CPU-first", "Documented limits"),
+    ("CC BY 4.0", "Seeded experiments", "CPU-first", "Documented limits"),
 )
 
 scope, reproducibility, data, limitations, contributing = st.tabs(
@@ -157,7 +157,8 @@ with data:
     )
     st.markdown("### Code license")
     st.markdown(
-        "The code in this repository is released under the MIT License. See `LICENSE`. "
+        "The code in this repository is released under the Creative Commons "
+        "Attribution 4.0 International License (CC BY 4.0). See `LICENSE`. "
         "Dataset licenses are separate and remain with their original providers."
     )
     st.markdown("### Artifact policy")
@@ -217,6 +218,6 @@ with contributing:
         "- Nichol & Dhariwal, *Improved Denoising Diffusion Probabilistic Models* (2021)."
     )
     st.markdown("### Version")
-    st.code("from-zero-ai-lab 0.1.0, MIT, Python >= 3.10", "text")
+    st.code("from-zero-ai-lab 0.1.0, CC BY 4.0, Python >= 3.10", "text")
 
 common.footer()
